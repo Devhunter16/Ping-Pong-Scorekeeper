@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-1by1">
+                            <img id="paddes" src=" https://source.unsplash.com/KTDP7pRKNrU/640x853">
+                        </figure>
+                    </div>
+                    <div class="card-header">
+                        <h1 class="card-header-title">Ping Pong Score Keeper</h1>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h2 class="title is-1">
+                                <span id="player1score">0</span>
+                                <span>to</span>
+                                <span id="player2score">0</span>
+                            </h2>
+                            <p class="subtitle">Use the buttons below to keep score.</p>
+                        </div>
+                        <div class="select is-rounded">
+                            <select id="select" name="select">
+                                <option selected>Playing to:</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card-footer">
+                            <button id="p1" type="button" class="button is-primary card-footer-item">+1 Player
+                                1</button>
+                            <button id="reset" type="button" class="button is-danger card-footer-item">Reset
+                                Game</button>
+                            <button id="p2" type="button" class="button is-info card-footer-item">+1 Player
+                                2</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="ScoreKeeper.js"></script>
+</body>
+
+</html>
